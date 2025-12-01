@@ -6,6 +6,7 @@ import TanstackProvider from "@/app/TanstackProvider"
 import LoadingBar from "@/components/ui/loading-bar"
 import SocketInitializer from "./socketProvider"
 import RouteGuard from "@/components/RouteGuard"
+import { Suspense } from "react"
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -38,7 +39,9 @@ export default function RootLayout({
 				<SocketInitializer>
 					<LoadingBar />
 					<TanstackProvider>
+						<Suspense fallback={null}>
 						<RouteGuard>{children}</RouteGuard>
+						</Suspense>
 					</TanstackProvider>
 					<Toaster
 						toastOptions={{
