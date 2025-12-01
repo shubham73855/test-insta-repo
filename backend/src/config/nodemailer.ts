@@ -1,19 +1,20 @@
-import * as nodemailer from "nodemailer"
-import ENV from "./env.js"
+import * as nodemailer from "nodemailer";
+import ENV from "./env.js";
 
 const transporter = nodemailer.createTransport({
-	service: "gmail",
-	auth: {
-		user: "rohityadav.se@gmail.com",
-		pass: ENV.GOOGLE_APP_PASSWORD,
-	},
-})
+  host: ENV.SMTP_HOST,
+  port: 2525,
+  auth: {
+    user: ENV.SMTP_USER,
+    pass: ENV.SMTP_PASS,
+  },
+});
 
 export const sendEmail = async (to: string, subject: string, html: string) => {
-	await transporter.sendMail({
-		from: '"Instagram" <rohityadav.se@gmail.com>',
-		to,
-		subject,
-		html,
-	})
-}
+  await transporter.sendMail({
+    from: '"Instagram" <shubham@gmail.com>',
+    to,
+    subject,
+    html,
+  });
+};

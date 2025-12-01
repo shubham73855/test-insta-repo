@@ -175,7 +175,6 @@ instagram-clone/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/rohityadav-sas/instagram-clone.git
    cd instagram-clone
    ```
 
@@ -325,7 +324,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Rohit Yadav**
+**Shubham Tiwari**
 
 ## 🙏 Acknowledgments
 
