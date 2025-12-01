@@ -58,4 +58,5 @@ httpServer.listen(ENV.PORT, () =>
 	)
 )
 
+export default httpServer;
 export { io }
