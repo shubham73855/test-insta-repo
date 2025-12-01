@@ -43,7 +43,7 @@ notification_schema.post("save", async function (doc) {
 		)
 		const receiverSocketId = online_users.get(doc.to._id.toString())
 		if (receiverSocketId) {
-			io.to(receiverSocketId).emit("notification", {
+			io?.to(receiverSocketId).emit("notification", {
 				notificationDetails,
 				isFollowing,
 			})
