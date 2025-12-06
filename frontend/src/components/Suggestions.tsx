@@ -120,32 +120,32 @@ const Suggestions = () => {
 				<div className="mt-8 pt-6 border-t border-gray-100">
 					<div className="text-xs text-gray-400 space-y-1">
 						<div className="flex flex-wrap gap-2">
-							<a href="#" className="hover:underline">
+							<a href="about" className="hover:underline">
 								About
 							</a>
 							<span>·</span>
-							<a href="#" className="hover:underline">
+							<a href="help" className="hover:underline">
 								Help
 							</a>
 							<span>·</span>
-							<a href="#" className="hover:underline">
+							<a href="press" className="hover:underline">
 								Press
 							</a>
 							<span>·</span>
-							<a href="#" className="hover:underline">
+							<a href="api" className="hover:underline">
 								API
 							</a>
 						</div>
 						<div className="flex flex-wrap gap-2">
-							<a href="#" className="hover:underline">
+							<a href="jobs" className="hover:underline">
 								Jobs
 							</a>
 							<span>·</span>
-							<a href="#" className="hover:underline">
+							<a href="privacy" className="hover:underline">
 								Privacy
 							</a>
 							<span>·</span>
-							<a href="#" className="hover:underline">
+							<a href="terms" className="hover:underline">
 								Terms
 							</a>
 						</div>
